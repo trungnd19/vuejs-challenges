@@ -3,3 +3,28 @@
 
 // DOC
 // https://vuejs.org/guide/components/v-model.html#handling-v-model-modifiers
+
+// Some notes:
+// For this to actually work though, the <CustomInput> component must do two things:
+
+Bind the value attribute of a native <input> element to the modelValue prop
+When a native input event is triggered, emit an update:modelValue custom event with the new value
+Here's that in action:
+
+<!-- CustomInput.vue -->
+<script setup>
+defineProps(['modelValue'])
+defineEmits(['update:modelValue'])
+</script>
+
+<template>
+  <input
+    :value="modelValue"
+    @input="$emit('update:modelValue', $event.target.value)"
+  />
+</template>
+  
+Now v-model should work perfectly with this component:
+
+template
+<CustomInput v-model="searchText" />
