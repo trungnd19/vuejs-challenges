@@ -12,15 +12,17 @@ My take on https://github.com/webfansplz/vuejs-challenges
 - [x] Capitalize
 - [x] Prop Validation
 - [x] Dependency Injection
+- [x] Next DOM update
 
 **Summary**
-- Hello World: Basic data binding (string interpolation)
-- Optimize Perf Directive: v-once
-- Dom Portal: <Teleport></Teleport>
-- Dynamic CSS value: v-bind in <style></style>
-- Ref Family: toRef(), isRef(), unRef()
-- Prevent event propagation: @click.stop
-- Global CSS: :global or <style> tag without "scoped"
-- Capitalize: v-model.capitalize (custom modifiers with modelValue, update:modelValue and modelModifiers)
-- Prop Validation: using validator in defineProps
-- Dependency Injection: provide/ inject for avoiding prop drill
+- Hello World: **Basic data binding (string interpolation)**
+- Optimize Perf Directive: **v-once**
+- Dom Portal: **<Teleport></Teleport>**
+- Dynamic CSS value: **v-bind in <style></style>**
+- Ref Family: **toRef(), isRef(), unRef()**
+- Prevent event propagation: **@click.stop**
+- Global CSS: **:global or <style> tag without "scoped"**
+- Capitalize: **v-model.capitalize (custom modifiers with modelValue, update:modelValue and modelModifiers)**
+- Prop Validation: **using validator in defineProps**
+- Dependency Injection: **provide/ inject for avoiding prop drill**
+- Next DOM update: **nextTick()**
