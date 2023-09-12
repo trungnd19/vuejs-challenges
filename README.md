@@ -26,3 +26,7 @@ My take on https://github.com/webfansplz/vuejs-challenges
 - Prop Validation: **using validator in defineProps**
 - Dependency Injection: **provide/ inject for avoiding prop drill**
 - Next DOM update: **nextTick()**
+- Writable Computed: **computed that can be reassigned value through getter/setter function**
+- Shallow Ref: **using shallowRef() api**
+- Watch family: **stop a watch - allow trigger once only/ deep watcher/ flush: "post"**
+
